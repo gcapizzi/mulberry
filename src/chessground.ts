@@ -29,7 +29,7 @@ export class Board {
             movable: {
                 events: {
                     after: (orig: Key, dest: Key) => {
-                        this.game.play(orig, dest);
+                        this.game.play(orig as chess.Square, dest as chess.Square);
                         ground.set({
                             turnColor: this.game.turn(),
                             movable: {
