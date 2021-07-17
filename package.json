@@ -1,0 +1,27 @@
+{
+  "name": "mulberry",
+  "version": "0.0.1",
+  "description": "my attempt at a chessbase clone",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "rollup --config"
+  },
+  "author": "giuseppe",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.2",
+    "@rollup/plugin-typescript": "^8.2.3",
+    "@types/chess.js": "^0.11.2",
+    "electron": "^13.1.5",
+    "rollup": "^2.53.2",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "chessground": "^8.1.1",
+    "chessops": "^0.9.0"
+  }
+}
