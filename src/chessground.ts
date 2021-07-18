@@ -12,12 +12,6 @@ export class Board {
 
     start(el: HTMLElement) {
         const ground = Chessground(el, {
-            highlight: {
-                check: true
-            },
-            draggable: {
-                showGhost: true
-            },
             movable: {
                 color: 'white',
                 free: false,
