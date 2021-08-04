@@ -2,8 +2,8 @@ import * as ReactDOM from "react-dom";
 
 import { App } from "./app";
 
-import * as chessops from "./chessops";
+import * as ivanchuk from "./ivanchuk";
+import { History } from "./history";
 
-const game = new chessops.Game();
-
-ReactDOM.render(<App game={game} />, document.getElementById("root"));
+const game = new ivanchuk.Game();
+ReactDOM.render(<App game={game} history={new History()} />, document.getElementById("root"));

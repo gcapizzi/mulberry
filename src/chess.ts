@@ -13,5 +13,5 @@ export interface Position {
 }
 
 export interface Game extends Position {
-  play(orig: Square, dest: Square): void;
+  play(orig: Square, dest: Square): Game;
 }
